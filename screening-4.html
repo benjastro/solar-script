@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let yesLink = './no-appointment.html';
+        if (urlParams.has('roofnotover15') && urlParams.get('roofnotover15') == "true") {
+            yesLink = './roof-not-over-15-question.html';
+        }
+        
+    </script>
     <div class="left-panel">
         <h1>Solar</h1>
         <h2>Screening</h2>
@@ -14,7 +23,7 @@
             4. I'm almost finished here, let me go through a list of some of the other services we are providing and see if you have a need for any of them as I have you on the phone Is your HVAC properly maintained and running well? 
         </p>
         <div class="menu">
-            <button onclick="window.location.href='./no-appointment.html'">Yes</button>
+            <button onclick="window.location.href=yesLink">Yes</button>
             <button onclick="window.location.href='./screening-4-no.html'">No</button>
         </div>
     </div>
