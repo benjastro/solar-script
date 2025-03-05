@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar script</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="left-panel">
+        <h1>Solar</h1>
+        <h2>Scheduled an Appointment with Date & Time</h2>
+        <h3>Appointment booked</h3>
+        <p>
+            "Great! Just to confirm, we will have a technician visit you on (date) at (time) to discuss your (project/service). We’re looking forward to seeing you then! Have a wonderful day!"
+        </p>
+        <div class="menu">
+            <button onclick="window.location.href='./index.html'">Homepage</button>
+        </div>
+    </div>
+    <div id="right-panel">
+    </div>
+    <script src="./functions.js"></script> 
+    <script>
+        putPanel("right-panel", createRebuttalPanel());
+    </script>
+</body>
+</html>

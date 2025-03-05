@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar script</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="left-panel">
+        <h1>Solar</h1>
+        <h2>Screening - No in question 1</h2>
+        <p>
+            May I know why you are not happy with your solar ?
+            <br><br>I'd love to have one of our Energy Experts conduct an analysis to determine if your system is providing the right energy offset. You might benefit from adding additional panels or a battery to improve efficiency. Would you be open to a free consultation?
+
+        </p>
+        <div class="menu">
+            <button onclick="window.location.href='./appointment.html'">Yes</button>
+            <button onclick="window.location.href='./index.html'">Homepage</button>
+        </div>
+    </div>
+    <div id="right-panel">
+    </div>
+    <script src="./functions.js"></script> 
+    <script>
+        putPanel("right-panel", createRebuttalPanel());
+    </script>
+</body>
+</html>

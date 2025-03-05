@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar script</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="left-panel">
+        <h1>Solar</h1>
+        <h2>Screening</h2>
+        <p>
+            We can have someone out to inspect and see at no cost. Does this Date & time work for you? 
+        </p>
+        <div class="menu">
+            <button onclick="window.location.href='./appointment.html'">Yes</button>
+            <button onclick="window.location.href='./index.html'">Homepage</button>
+        </div>
+    </div>
+    <div id="right-panel">
+    </div>
+    <script src="./functions.js"></script> 
+    <script>
+        putPanel("right-panel", createRebuttalPanel());
+    </script>
+</body>
+</html>
